@@ -20,12 +20,20 @@ Pair2 = WordlistPair('Ex2.2Set2: Sanskrit to Pali',
                     ['sinaːna', 'sineha', 'sinihyati', 'siniddha'])
 
 pair3 = {
-    "Sanskrit": ['aːʂadha', 'kaːuʃika'],
-    "Pali": ['oːsadha', 'koːsika']
+    "Sanskrit": ['auːʂadha', 'kauːʃika', 'gaura', 'mauna', 'augʰa', 'taiːla', 'vaiːra', 'ʃaiːla', 'aikja'],
+    "Pali": ['oːsadha', 'koːsika', 'goːra', 'moːna', 'oːgʰa', 'teːla', 'veːra', 'seːla', 'ekka']
+}
+
+Ex2_2_dict = {
+    "Sanskrit": ['sasa', 'keːʃa', 'deːʃa', 'doːʂa', 'daːʂa', 'ʃiʂja', 'sasja', 'snaːna', 'sneha', 'snihyati', 'snigdha',
+                 'auːʂadha', 'kauːʃika', 'gaura', 'mauna', 'augʰa', 'taiːla', 'vaiːra', 'ʃaiːla', 'aikja'],
+    "Pali": ['sasa', 'kesa', 'desa', 'dosa', 'dasa', 'sissa', 'sassa', 'sinaːna', 'sineha', 'sinihyati', 'siniddha',
+                'oːsadha', 'koːsika', 'goːra', 'moːna', 'oːgʰa', 'teːla', 'veːra', 'seːla', 'ekka'],
+    "Set": ['I','I','I','I','I','I','I', 'II', 'II', 'II', 'II',
+            'III', 'III', 'III', 'III', 'III', 'III', 'III', 'III', 'III']
 }
 
 dfpair3 = pd.DataFrame(pair3)
-
-print(dfpair3)
-
-exit()
+pair3_list1 = dfpair3['Sanskrit'].tolist()
+pair3_list2 = dfpair3['Pali'].tolist()
+Ex2_2 = pd.DataFrame(Ex2_2_dict)
